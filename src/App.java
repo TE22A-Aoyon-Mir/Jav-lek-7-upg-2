@@ -17,12 +17,16 @@ public class App {
         //Koden fungerar inte eftersom variabeln "storTal inte är definerad i else och sout."
         //Koden fungerar genom att flytta "int storTal = 1000;" ut från if då det endast gällde för den.
 
-        //b
+        //b & c
         int tal1 = 10;
-        int tal2 = 20;
+        int tal2 = 0;
         if(tal2>tal1)
         {
             System.out.println(tal2+" större än "+tal1);
+        }
+        else
+        {
+            System.out.println(tal2+" mindre än "+tal1);
         }
     }
 }

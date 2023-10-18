@@ -1,6 +1,10 @@
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
         
+        Scanner t = new Scanner(System.in);
+
         //a
         int litetTal = 10;
         int storTal = 1000;
@@ -28,5 +32,22 @@ public class App {
         {
             System.out.println(tal2+" mindre än "+tal1);
         }
+
+        //d
+        System.out.println("Vad är klockan: ");
+        int klockan = t.nextInt();
+        if(klockan>=7 && klockan<8)
+        {
+            System.out.println("Vakna upp");
+        }
+        else if (klockan==12)
+        {
+            System.out.println("Dags att äta");
+        }
+        else if(klockan>=23)
+        {
+            System.out.println("Dags att gå och lägga sig");
+        }
+
     }
 }

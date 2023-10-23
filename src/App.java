@@ -40,7 +40,7 @@ public class App {
         {
             System.out.println("Vakna upp");
         }
-        else if (klockan==12)
+        else if(klockan==12)
         {
             System.out.println("Dags att äta");
         }
@@ -49,5 +49,32 @@ public class App {
             System.out.println("Dags att gå och lägga sig");
         }
 
+        //e
+        System.out.println("Hur gammal är du: ");
+        int ålder = t.nextInt();
+        System.out.println("Är du medlem 1=ja/2=nej: ");
+        int medlem = t.nextInt();
+        if(ålder>18 || medlem==1)
+        {
+            System.out.println("Du får komma in");
+        }
+        else
+        {
+            System.out.println("Du får inte komma in");
+        }
+        //f
+        System.out.println("Ange ditt användarnamn: ");
+        t.nextLine();
+        String användarnamn = t.nextLine();
+        System.out.println("Ange ditt lösenord: ");
+        String lösenord = t.nextLine();
+        if(användarnamn.equals("root") && lösenord.equals("passwd"))
+        {
+            System.out.println("Välkommen");
+        }
+        else
+        {
+            System.out.println("Stick härifrån");
+        }
     }
 }

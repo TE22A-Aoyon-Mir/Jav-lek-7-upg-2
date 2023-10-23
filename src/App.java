@@ -76,5 +76,29 @@ public class App {
         {
             System.out.println("Stick härifrån");
         }
+        //g
+        System.out.println("Meny väderprogram");
+        System.out.println("1. Skriv ut temperatur");
+        System.out.println("2. Skriv ut vind");
+        System.out.println("3. Skriv ut luftfuktigheten");
+        System.out.println("Ange val");
+        int val = t.nextInt();
+        switch(val)
+        {
+            case 1:
+        System.out.println("Det är 18 grader");
+        break;
+
+        case 2:
+        System.out.println("Vinden 10 sekunder meter");
+        break;
+
+        case 3:
+        System.out.println("Det är 100% luftighet");
+
+        default:
+        System.out.println("Del val");
+        break;
+        }
     }
 }
